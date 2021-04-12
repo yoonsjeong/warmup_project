@@ -9,7 +9,7 @@ The following is a gif of the robot:
 
 ## Person Follower
 For this program, the problem was to approach a figure that is within the robot's vision. I decided to have the robot rotate while standing still if it did not see a person in front of it, and if it does see a person, it will drive forward. I also added some code to have it back up a little bit if it gets too close to the person.
-My run function just runs allows `/scan` to call its callback `process_scan` repeatedly. Within my `process_scan` function I first check to see if the distance from the nearest thing ahead is infinity (the way to do this in Python is `float("inf)`), in which case I spin around at a rate of 1 rad per second. Then it checks to see if the distance is greater than 1.2, in which case it will move forward. If it gets too close somehow, it will start moving backwards. If the distance is between 0.8 and 1.2, the robot will stop.
+My run function just runs allows `/scan` to call its callback `process_scan` repeatedly. Within my `process_scan` function I first check to see if the distance from the nearest thing ahead is infinity (the way to do this in Python is `float("inf")`), in which case I spin around at a rate of 1 rad per second. Then it checks to see if the distance is greater than 1.2, in which case it will move forward. If it gets too close somehow, it will start moving backwards. If the distance is between 0.8 and 1.2, the robot will stop.
 The following is a gif of the robot:
 ![person follower][person]
 
