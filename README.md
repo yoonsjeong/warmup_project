@@ -8,4 +8,8 @@ The following is a gif of the robot:
 
 ![driving in a square][square]
 
-[square]: ./square.gif
+[square]: ./gifs/drive_square.gif
+
+<!-- 
+ffmpeg -i person_follower.mp4 -vf "eq=brightness=0.1,fps=30,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 person_follower.gif
+ -->
